@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+  <title> suraj jha </title>
+<link rel="stylesheet" type="text/css" href="index.css">
+<link rel="stylesheet"  href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"  />
+</head>
+<body>
+  <section class="banner">
+    <header>
+      <a href="#" class="logo">Suraj jha </a>
+      <div class="toggle"></div>
+    </header>
+    <img src="C:\Users\Microsoft\Documents\Ratish\image1 (8).jpg" class="men">
+    <div class="content">
+      <div class="contentbx">
+        <h4>Hello,</h4>
+        <h2>i'm suraj jha</h2>
+        <h3>A web developer and software engineer</h3>
+        <p>i am from Ram Govind Institute of Technology. this is my official website. you can contact me in this website..have fun my friend !</p>
+          <a href="#">Hire me</a>
+          <a href="#">Contact me</a>
+
+      </div>
+    </div>
+    <ul class="sci">
+      <li><a href="https://www.facebook.com/surajjerry3ryjmvgh"><i class="fab fa-facebook"></i></a></li>
+      <li><a href="https://api.whatsapp.com/send?phone=+916202367807"><i class="fab fa-whatsapp"></i></a></li>
+      <li><a href="https://instagram.com/histarsuraj?utm_medium=copy_link"><i class="fab fa-instagram"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/suraj-jha-b543b420a"><i class="fab fa-linkedin-in"></i></a></li>
+    </ul>
+    <div class="menu">
+      <li><a href="#"> Home</a></li>
+      <li><a href="#"> About</a></li>
+      <li><a href="#"> Services</a></li>
+      <li><a href="#"> Projects</a></li>
+      <li><a href="#"> Contact me</a></li>
+    </div>
+    <img src="C:\Users\Microsoft\Documents\Ratish\1.png"  class="elements"   data-speed="8">
+    <img src="C:\Users\Microsoft\Documents\Ratish\2.png"  class="elements"   data-speed="6">
+    <img src="C:\Users\Microsoft\Documents\Ratish\3.png"  class="elements"   data-speed="-10">
+    <img src="C:\Users\Microsoft\Documents\Ratish\4.png"  class="elements"   data-speed="-6">
+
+
+  </selection>
+  <script>
+    const toggle = document.querySelector('.toggle');
+    const banner = document.querySelector('.banner');
+    toggle.onclick = function(){
+      toggle.classList.toggle('active');
+      banner.classList.toggle('active');
+
+    }
+    function parallax(e) {
+        this.querySelectorAll('.elements').forEach(layer=>{
+          const speed=layer.getAttribute('data-speed');
+          const x= (window.innerWidth-e.pageX*speed)/100 ;
+          layer.style.trnsform='translateX(s(x)px)';
+        })
+
+    }
+    document.addEventListener("mousemove", parallax);
+  </script>
+    </body>
+    </html>
